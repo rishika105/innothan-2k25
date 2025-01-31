@@ -1,32 +1,21 @@
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import KeyFeatures from "./components/KeyFeatures";
+import HowItWorks from "./components/HowItWorks";
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import TrafficMap from './components/TrafficMap'
-import RouteOptimizationMap from './components/RouteOptimizationMap'
-import Navbar from './components/Navbar';
-
-
-function App() {
+const App = () => {
   return (
-    <>
-<Navbar/>
-      
-      <div className="">
-        <Routes>
-          <Route path="/traffic" element={<TrafficMap/>}/>
-          <Route path="/route-optimization" element={<RouteOptimizationMap/>}/>
-        </Routes>
-
-   
-
-      </div>
-=
-    </>
+    <div className="bg-neutral-100 text-neutral-900 font-sans">
+      <Header />
+      <Hero />
+      <KeyFeatures />
+      <HowItWorks />
+      <Testimonials />
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
