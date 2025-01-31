@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import tt from "@tomtom-international/web-sdk-maps";
 import "@tomtom-international/web-sdk-maps/dist/maps.css";
+import Header from "./Header";
 
 const TrafficMap = () => {
   useEffect(() => {
@@ -35,8 +36,8 @@ const TrafficMap = () => {
 
   return (
     <>
-      <div className="text-white">Traffic Map</div>
-      <div style={{ width: "90vw", height: "550px" }} className="mx-auto">
+      <Header/>
+      <div className="mx-auto w-[100vw] h-[100vh]">
         <div id="map" style={{ width: "100%", height: "100%" }}></div>
       </div>
     </>
