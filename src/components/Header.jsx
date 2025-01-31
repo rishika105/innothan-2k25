@@ -47,13 +47,13 @@ const Header = () => {
             Home
           </a>
           <a
-            href="#"
+            href="/dashboard"
             className="block md:inline text-green-600 hover:text-green-800"
           >
             Dashboard
           </a>
           <a
-            href="#"
+            href="/RoutePlanner"
             className="block md:inline text-green-600 hover:text-green-800"
           >
             Route Planner
@@ -65,10 +65,10 @@ const Header = () => {
             Predictive Alerts
           </a>
           <a
-            href="#"
+            href="/traffic"
             className="block md:inline text-green-600 hover:text-green-800"
           >
-            About Us
+            Traffic Map
           </a>
         </nav>
       </div>
