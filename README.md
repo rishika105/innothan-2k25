@@ -1,8 +1,14 @@
-# React + Vite
+# Problem Statement
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Urban transportation systems are experiencing exponential growth in congestion, driven by the disintegration of
+urban mobility networks and an increasing demand for multimodal transit. Existing traffic systems are predominantly
+centralized and rely on fixed-response algorithms, failing to address dynamic traffic conditions and variable
+congestion patterns. This exacerbates the inefficiencies in both fuel consumption and urban air quality, which current
+systems are incapable of mitigating through real-time, data-driven intelligence. The challenge lies in integrating
+cyber-physical systems, multi-source data analytics, and predictive traffic flow algorithms into an adaptive, realtime system capable of managing autonomous vehicles, ride-sharing fleets, and public transit simultaneously.
 
-Currently, two official plugins are available:
+# Challenge
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+How can an AI-driven cyber-physical system integrate real-time traffic data, connected vehicle intelligence, and
+decentralized decision-making to optimize urban mobility and congestion management while balancing centralized
+control with edge autonomy?
