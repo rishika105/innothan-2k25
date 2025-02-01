@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 import Header from "./Header";
 import Footer from "./Footer";
