@@ -53,7 +53,7 @@ const Header = () => {
             Dashboard
           </a>
           <a
-            href="#"
+            href="/RoutePlanner"
             className="block md:inline text-green-600 hover:text-green-800"
           >
             Route Planner
