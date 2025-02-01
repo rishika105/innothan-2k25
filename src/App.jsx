@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import TrafficMap from "./components/TrafficMap";
 import RouteOptimizationMap from "./components/RouteOptimizationMap";
 import CentralizedDashboard from "./components/Dashboard";
+import PredictiveAlerts from "./components/PredictiveAlerts";
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
         <Route path="/traffic" element={<TrafficMap />} />
         <Route path="/route-optimization" element={<RouteOptimizationMap />} />
         <Route path="/dashboard" element={<CentralizedDashboard />} />
+        <Route path="/predictiveAlerts" element={<PredictiveAlerts />} />
+
       </Routes>
     </div>
   );
