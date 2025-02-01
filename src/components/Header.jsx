@@ -8,7 +8,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md py-4">
+    <header className="bg-white shadow-md py-4 w-[100vw] mt-1">
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
         <a className="text-xl font-bold text-green-600 mt-3" href="/">SmartRoute</a>
@@ -59,7 +59,7 @@ const Header = () => {
             Route Planner
           </a>
           <a
-            href="/predictiveAlerts"
+            href="/predictiveAnalysis"
             className="block md:inline text-green-600 hover:text-green-800"
           >
             Predictive Alerts

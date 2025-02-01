@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import routePlanner from "../assets/route.jpg";
 
 const RoutePlanner = () => {
   const [start, setStart] = useState("");
@@ -142,9 +145,13 @@ const RoutePlanner = () => {
   };
 
   return (
-    <section className="bg-neutral-100 py-12">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-8 text-neutral-900">
+   <>
+   <Header/>
+    <section className="bg-neutral-100 py-12 w-[100vw] flex justify-center items-center mb-24 mt-8">   
+     <div className="flex justify-center items-center gap-8">
+      <img src={routePlanner} alt="Route Planner" className="w-[390px] h-[350px]"/>
+     <div className="container mx-auto px-6 w-[80%]">
+        <h2 className="text-3xl font-bold text-center mb-8 text-neutral-900 mt-3">
           Route Planner with Waypoint Optimization
         </h2>
 
@@ -156,7 +163,7 @@ const RoutePlanner = () => {
               placeholder="Starting Point (e.g., Chennai)"
               value={start}
               onChange={(e) => setStart(e.target.value)}
-              className="w-full p-3 border border-neutral-300 rounded-lg focus:outline-none focus:border-green-500"
+              className="w-full p-3 border border-neutral-400 rounded-lg focus:outline-none focus:border-green-500 bg-slate-100"
             />
             {waypoints.map((waypoint, index) => (
               <input
@@ -179,7 +186,7 @@ const RoutePlanner = () => {
               placeholder="Destination (e.g., Bhubaneswar)"
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
-              className="w-full p-3 border border-neutral-300 rounded-lg focus:outline-none focus:border-green-500"
+              className="w-full p-3 border border-neutral-400 rounded-lg focus:outline-none focus:border-green-500 bg-slate-100"
             />
             <button
               onClick={calculateRoute}
@@ -232,7 +239,10 @@ const RoutePlanner = () => {
           )}
         </div>
       </div>
+     </div>
     </section>
+    <Footer/>
+   </>
   );
 };
 

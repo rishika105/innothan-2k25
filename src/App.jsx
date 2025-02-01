@@ -2,8 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import TrafficMap from "./components/TrafficMap";
 import CentralizedDashboard from "./components/Dashboard";
-import PredictiveAlerts from "./components/PredictiveAlerts";
 import RoutePlanner from "./components/RoutePlanner";
+import PredictiveAnalysis from "./components/PredictiveAnalysis";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/traffic" element={<TrafficMap />} />
         <Route path="/dashboard" element={<CentralizedDashboard />} />
-        <Route path="/predictiveAlerts" element={<PredictiveAlerts />} />
+        <Route path="/predictiveAnalysis" element={<PredictiveAnalysis />} />
         <Route path="/RoutePlanner" element={<RoutePlanner />} />
       </Routes>
     </div>

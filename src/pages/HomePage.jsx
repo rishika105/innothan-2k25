@@ -7,8 +7,8 @@ import Header from "../components/Header";
 
 const HomePage = () => {
   return (
-    <div className="overflow-y-hidden">
-        <Header/>
+    <div className="overflow-y-hidden w-[100vw]">
+      <Header />
       <Hero />
       <KeyFeatures />
       <HowItWorks />
