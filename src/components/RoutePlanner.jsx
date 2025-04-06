@@ -11,7 +11,7 @@ const RoutePlanner = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const TOMTOM_API_KEY = "PD1XGUiUO91Xh4aEcW764dHRXOxwJqtw";
+  const TOMTOM_API_KEY = "";
 
   // Geocode an address using TomTom API
   const geocodeAddress = async (address) => {
